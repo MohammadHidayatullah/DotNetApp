@@ -1,41 +1,74 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - DotNetApp</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DotNetApp.styles.css" asp-append-version="true" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="~/images/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Indigo
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <button class="btn btn-outline-success" type="submit">Login</button>
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="~/uploadedfiles/images/sistro.png" alt="Sistro" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <a class="ms-auto btn btn-primary" href="http://sistro.petrokimia-gresik.com/Account/Login" type="button">Login</a>
+                </div>
             </div>
-        </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top footer text-muted py-5">
         <div class="container">
-            &copy; 2023 - DotNetApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="contain-footer">
+                        <img src="~/uploadedfiles/images/sistro-white.png" alt="">
+                        <p class="text-white mt-3">
+                            Benefit dari sistem ini, rekanan mendapat kepastian jadwal untuk muat. Ketersediaan pupuk
+                            ini menjadi faktor vital dalam upaya peningkatan produktivitas hasil panen dalam rangka
+                            meningkatkan kesejahteraan petani dan menjaga ketahanan pangan nasional.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="contain-footer">
+                        <h6 class="text-white">Accout</h6>
+                        <p class="text-white">Login</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="contain-footer">
+                        <h6 class="text-white">Companny</h6>
+                        <p class="text-white">Pupuk Indonesia</p>
+                        <p class="text-white">Petrokimia Gresik</p>
+                        <p class="text-white">Pupuk Kujang Cikampek</p>
+                        <p class="text-white">Pupuk Iskandar Muda</p>
+                        <p class="text-white">Pupuk Sriwidjaja</p>
+                        <p class="text-white">Palembang</p>
+                        <p class="text-white">Pupuk Kalimantan Timur</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -45,4 +78,5 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

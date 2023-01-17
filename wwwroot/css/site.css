@@ -1,3 +1,5 @@
+/** @format */
+
 html {
   font-size: 14px;
 }
@@ -8,7 +10,11 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -19,4 +25,87 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+.hero {
+  height: 550px;
+}
+
+.left {
+  position: absolute;
+  z-index: 1;
+  left: -100px;
+  background-color: #fff;
+  width: 60%;
+  height: 550px;
+  transform: skew(-20deg, 0deg);
+}
+
+.left-content {
+  padding: 120px;
+  padding-left: 160px;
+  transform: skew(20deg, 0deg);
+}
+
+span {
+  color: #258cfb;
+}
+
+.right {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  width: 60%;
+  height: 550px;
+}
+
+.hero-img {
+  object-fit: cover;
+  height: 550px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.info-title{
+  background-color: #cae4ff;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+.info-title p {
+  color: #298af2;
+  padding: 10px;
+  margin: 0;
+} 
+
+.desc{
+  width: 50%;
+}
+
+.desc p {
+  text-align: center;
+}
+
+.card-fitur{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  margin-bottom: 200px;
+}
+
+.wrapper{
+  padding: 20px;
+}
+
+.fitur-image {
+  margin-bottom: 20px;
+}
+
+.fitur-image img {
+  height: 200px;
+  width: 100%;
 }

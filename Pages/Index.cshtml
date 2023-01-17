@@ -4,7 +4,79 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero">
+    <div class="container">
+        <div class="left">
+            <div class="left-content">
+                <h1>
+                    Sistem Scheduling Truk Online <span>(Sistro)</span>
+                </h1>
+                <p class="text-muted">
+                    Aplikasi Holistik dalam bidang Logistik, yang berfungsi untuk melakukan pengelolaan stok pupuk,
+                    khususnya dalam lingkup Departemen Pergudangan PT Petrokimia Gresik.
+                </p>
+                <a class="btn btn-primary" href="http://sistro.petrokimia-gresik.com/Account/Login">
+                    Login
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="~/uploadedfiles/images/hero.webp" alt="hero" class="hero-img" />
+        </div>
+    </div>
 </div>
+<section class="info">
+    <div class="info-title">
+        <p>Sekilas tentang SISTRO</p>
+    </div>
+    <div class="desc mt-2">
+        <p class="text-muted">
+            SISTRO merupakan aplikasi operasional distribusi pada PT Pupuk Indonesia, dengan beberapa fitur unggulan
+            seperti penjadwalan pemuatan truk, Tracking armada pemuatan, dan pencetakan tiket muat.
+        </p>
+    </div>
+</section>
+
+<section id="fitur">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card card-fitur">
+                    <div class="wrapper">
+                        <div class="fitur-image">
+                            <img src="~/uploadedfiles/images/fitur1.svg" alt="">
+                        </div>
+                        <h5>Penjadwalan Pemuatan Truk</h5>
+                        <p class="text-muted">Fitur ini memberikan benefit kepastian muat yang didapatkan dari
+                            perhitungan slot pemuatan/kuota dengan mempertimbangkan kondisi produksi dan stok yang ada
+                            di Gudang</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card card-fitur">
+                    <div class="wrapper">
+                        <div class="fitur-image">
+                            <img src="~/uploadedfiles/images/fitur2.svg" alt="">
+                        </div>
+                        <h5>Tracking Armada Pemuatan</h5>
+                        <p class="text-muted">Fitur yang digunakan untuk melacak keberadaan armada pemuatan di
+                            checkpoint SISTRO di kawasan dalam pabrik</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card card-fitur">
+                    <div class="wrapper">
+                        <div class="fitur-image">
+                            <img src="~/uploadedfiles/images/fitur3.svg" alt="">
+                        </div>
+                        <h5>Penjadwalan Pemuatan Truk</h5>
+                        <p class="text-muted">Tiket Muat SISTRO digunakan untuk scan checkpoint di kawasan pabrik dan
+                            diintegrasikan dengan beberapa aplikasi pergudangan dan timbangan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

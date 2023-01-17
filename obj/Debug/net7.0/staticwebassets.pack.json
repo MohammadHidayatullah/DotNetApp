@@ -245,6 +245,26 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\FILE SEMENTARA\\DotNetApp\\wwwroot\\uploadedfiles\\images\\fitur1.svg",
+      "PackagePath": "staticwebassets\\uploadedfiles\\images\\fitur1.svg"
+    },
+    {
+      "Id": "D:\\FILE SEMENTARA\\DotNetApp\\wwwroot\\uploadedfiles\\images\\fitur2.svg",
+      "PackagePath": "staticwebassets\\uploadedfiles\\images\\fitur2.svg"
+    },
+    {
+      "Id": "D:\\FILE SEMENTARA\\DotNetApp\\wwwroot\\uploadedfiles\\images\\fitur3.svg",
+      "PackagePath": "staticwebassets\\uploadedfiles\\images\\fitur3.svg"
+    },
+    {
+      "Id": "D:\\FILE SEMENTARA\\DotNetApp\\wwwroot\\uploadedfiles\\images\\hero.webp",
+      "PackagePath": "staticwebassets\\uploadedfiles\\images\\hero.webp"
+    },
+    {
+      "Id": "D:\\FILE SEMENTARA\\DotNetApp\\wwwroot\\uploadedfiles\\images\\sistro.png",
+      "PackagePath": "staticwebassets\\uploadedfiles\\images\\sistro.png"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.DotNetApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
